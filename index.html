@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"
+        defer></script>
+
+    <style>
+        .navbar-nav .nav-link {
+            position: relative;
+        }
+
+        .navbar-nav .nav-link::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background-color: rgb(240, 49, 49);
+            transition: width 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover::before {
+            width: 100%;
+        }
+
+        .navbar-brand,
+        .navbar-nav .nav-link:hover {
+            color: rgb(250, 44, 82);
+            font-weight: bold;
+        }
+
+        /* slider */
+        .carousel-item {
+            height: 90vh;
+            position: relative;
+        }
+
+        .carousel-content {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            z-index: 2;
+            position: relative;
+        }
+
+        .carousel-item::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+
+        .bg-slide-1 {
+            background: linear-gradient(135deg, #101010, #6e706f);
+        }
+
+        .bg-slide-2 {
+            background: linear-gradient(155deg, #101010, #b4b4b4);
+        }
+
+        .bg-slide-3 {
+            background: linear-gradient(190deg, #101010, #6e706f);
+        }
+
+        .carousel-item h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .carousel-item p {
+            font-size: 1.2rem;
+        }
+
+        .carousel-indicators .active {
+            background-color: rgb(239, 53, 53) !important;
+        }
+
+        #serv {
+            height: 70vh;
+            background-color: #d4d4d4;
+        }
+
+        #fetur {
+            background-color: #dadada;
+            text-align: center;
+        }
+
+        .card:hover {
+            background-color: #101010;
+            color: tomato;
+        }
+
+        img {
+            opacity: 0.7;
+            filter: brightness(0.2) blur(3px);
+            transition: all 0.3s ease;
+        }
+
+        img:hover {
+            opacity: 1;
+            filter: brightness(1) blur(0);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand text-danger ps-5" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto pe-5">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active bg-slide-1">
+                    <div class="carousel-content">
+                        <div>
+                            <h1 class="text-danger">Welcome1</h1>
+                            <p class="text-danger">Beautiful gree gradient background</p>
+                            <button class="btn btn-danger mt-3">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item bg-slide-2" data-bs-interval="2000">
+                    <div class="carousel-content">
+                        <div>
+                            <h1 class="text-danger">Welcom 2</h1>
+                            <p class="text-danger">smooth gradient</p>
+                            <button class="btn btn-danger mt-3">Explore</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item bg-slide-3">
+                    <div class="carousel-content">
+                        <div>
+                            <h1 class="text-danger">Welcom 3</h1>
+                            <p class="text-danger">vibrant gradient</p>
+                            <button class="btn btn-danger mt-3">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev text-danger" type="button" data-bs-target="#carouselExample"
+                data-bs-slide="prev"></button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                data-bs-slide="next"></button>
+        </div>
+    </main>
+
+    <!-- Cards && icon -->
+    <div class="row g-0 justify-content-center align-items-start py-5">
+        <div class="col-auto">
+            <div class="card text-center" style="width: 18rem;">
+                <div class="pt-5">
+                    <i class="fa-solid fa-thumbs-up fs-1 text-danger"></i>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-auto">
+            <div class="card text-center" style="width: 18rem;">
+                <div class="pt-5">
+                    <i class="fa-solid fa-rocket fs-1 text-danger"></i>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-auto">
+            <div class="card text-center" style="width: 18rem;">
+                <div class="pt-5">
+                    <i class="fa-brands fa-rocketchat fs-1 text-danger"></i>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- F cards -->
+    <div id="fetur" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center g-4">
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-header fs-5">Featured</div>
+                        <div class="card-body text-start">
+                            <h5 class="card-title">Special title 1</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                            </p>
+                            <a href="#" class="btn btn-danger">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-header fs-5">Featured</div>
+                        <div class="card-body text-start">
+                            <h5 class="card-title">Special title 1</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                            </p>
+                            <a href="#" class="btn btn-danger">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-header fs-5">Featured</div>
+                        <div class="card-body text-start">
+                            <h5 class="card-title">Special title 1</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                            </p>
+                            <a href="#" class="btn btn-danger">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-header fs-5">Featured</div>
+                        <div class="card-body text-start">
+                            <h5 class="card-title">Special title 1</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                            </p>
+                            <a href="#" class="btn btn-danger">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-header">Featured</div>
+                        <div class="card-body text-start">
+                            <h5 class="card-title">Special title 2</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                            </p>
+                            <a href="#" class="btn btn-danger">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-header">Featured</div>
+                        <div class="card-body text-start">
+                            <h5 class="card-title">Special title 3</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                            </p>
+                            <a href="#" class="btn btn-danger">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="row g-3 justify-content-center align-items-center py-5">
+       
+        <div class="col-auto"><img src="./js.png" alt="" style="width: 14rem;"></div>
+        <div class="col-auto"><img src="./js.png" alt="" style="width: 14rem;"></div>
+        <div class="col-auto"><img src="./js.png" alt="" style="width: 14rem;"></div>
+        <div class="col-auto"><img src="./js.png" alt="" style="width: 14rem;"></div>
+        <div class="col-auto"><img src="./js.png" alt="" style="width: 14rem;"></div>
+    </div>
+
+
+
+    <!-- foooooootr -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-md-left">
+            <div class="row text-md-left">
+    
+                <!-- About -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-danger">Company x</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quidem.
+                    </p>
+                </div>
+    
+                <!-- Links -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-danger">Products</h5>
+                    <p><a href="#" class="text-white text-decoration-none">Product 1</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Product 2</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Product 3</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Product 4</a></p>
+                </div>
+    
+                <!-- Useful links -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-danger">Useful Links</h5>
+                    <p><a href="#" class="text-white text-decoration-none">Your Account</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Become an Affiliate</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Shipping Rates</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Help</a></p>
+                </div>
+    
+                <!-- Contact -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-danger">Contact</h5>
+                    <p><i class="fas fa-home mr-3  text-ganger"></i> 123 Main St, City, Country</p>
+                    <p><i class="fas fa-envelope mr-3   text-ganger"></i> info@example.com</p>
+                    <p><i class="fas fa-phone mr-3   text-ganger"></i> +1288938773</p>
+                    <p><i class="fas fa-print mr-3   text-ganger"></i> -088269963</p>
+                </div>
+    
+            </div>
+    
+            <hr class="mb-4" style="border-color: rgba(255,255,255,0.2);">
+    
+            <div class="row align-items-center">
+                <div class="col-md-7 col-lg-8">
+                    <p>© 2026 All Rights Reserved by:
+                        <a href="#" class="text-danger text-decoration-none"><strong>Company Name</strong></a>
+                    </p>
+                </div>
+    
+                <div class="col-md-5 col-lg-4">
+                    <div class="text-center text-md-right">
+                        <a href="#" class="text-danger me-4 text-danger"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-danger me-4"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-danger me-4"><i class="fab fa-google"></i></a>
+                        <a href="#" class="text-danger me-4"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-danger me-4"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
