@@ -40,4 +40,4 @@ Here’s a visual preview of the project:
 ## How to Run
 1. **Clone the repository**:
 ```bash
-git clone https://github.com/yourusername/your-repo-name.git
+git clone [https://github.com/Abanoubmaqqar19/responsive-web-page-using-bootstrap.git]
