@@ -32,8 +32,8 @@ The main goal of this project is to **demonstrate web development skills**, **pr
 ## Preview
 Here’s a visual preview of the project:
 
-![Carousel and Cards Preview](images/preview.png)  
-*(Replace with your own screenshot image in the images folder)*
+![Project Screenshot](projectScreens/desktop.jpeg)  
+
 
 ---
 
