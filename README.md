@@ -34,10 +34,26 @@ Here’s a visual preview of the project:
 
 ![Project Screenshot](projectScreens/desktop.jpeg)  
 
-
 ---
+## Mobile First DESIGN
+![Project Screenshot](projectScreens/mob.jpeg)  
+---
+![Project Screenshot](projectScreens/mobCards.jpeg)  
+---
+![Project Screenshot](projectScreens/mobFeater.jpeg)  
+---
+![Project Screenshot](projectScreens/mobFooter.jpeg)  
+---
+##MD screen
+![Project Screenshot](projectScreens/mdscreen.jpeg)  
+---
+![Project Screenshot](projectScreens/medScreen.jpeg)  
+---
+
+
 
 ## How to Run
 1. **Clone the repository**:
 ```bash
 git clone [https://github.com/Abanoubmaqqar19/responsive-web-page-using-bootstrap.git]
+
