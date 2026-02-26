@@ -58,6 +58,13 @@ Here’s a visual preview of the project:
 </p>
 
 ---
+## 👨‍💻 Author
+
+**Abanoub Maqqar**
+
+- GitHub: https://github.com/Abanoubmaqqar19  
+- LinkedIn: https://linkedin.com/in/abanoub-maqqar-4b7980236  
+- Email: abanoubmaqqar19@gmail.com  
 
 
 
