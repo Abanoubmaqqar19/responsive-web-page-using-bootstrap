@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ITI Web Projects Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -116,6 +116,9 @@
             opacity: 1;
             filter: brightness(1) blur(0);
         }
+        #features{
+            background-color: #c4c2c2;
+        }
     </style>
 </head>
 
@@ -123,7 +126,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand text-danger ps-5" href="#">Navbar</a>
+                <a class="navbar-brand text-danger ps-5" href="#">ITI Projects</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -132,19 +135,19 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto pe-5">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="#projects">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link" href="#features">Features</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link" href="#skills">Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -164,9 +167,9 @@
                 <div class="carousel-item active bg-slide-1">
                     <div class="carousel-content">
                         <div>
-                            <h1 class="text-danger">Welcome1</h1>
-                            <p class="text-danger">Beautiful gree gradient background</p>
-                            <button class="btn btn-danger mt-3">Learn More</button>
+                            <h1 class="text-danger">Welcome to ITI Portfolio</h1>
+                            <p class="text-danger">Showcasing real web projects from ITI web development training.</p>
+                            <a href="#projects" class="btn btn-danger mt-3">View Projects</a>
                         </div>
                     </div>
                 </div>
@@ -174,9 +177,10 @@
                 <div class="carousel-item bg-slide-2" data-bs-interval="2000">
                     <div class="carousel-content">
                         <div>
-                            <h1 class="text-danger">Welcom 2</h1>
-                            <p class="text-danger">smooth gradient</p>
-                            <button class="btn btn-danger mt-3">Explore</button>
+                            <h1 class="text-danger">Modern Web Designs</h1>
+                            <p class="text-danger">Responsive and interactive projects built with HTML, CSS, JS, and
+                                Bootstrap.</p>
+                            <a href="#features" class="btn btn-danger mt-3">Explore Features</a>
                         </div>
                     </div>
                 </div>
@@ -184,9 +188,9 @@
                 <div class="carousel-item bg-slide-3">
                     <div class="carousel-content">
                         <div>
-                            <h1 class="text-danger">Welcom 3</h1>
-                            <p class="text-danger">vibrant gradient</p>
-                            <button class="btn btn-danger mt-3">Get Started</button>
+                            <h1 class="text-danger">Get in Touch</h1>
+                            <p class="text-danger">Contact us for collaboration or freelance opportunities.</p>
+                            <a href="#contact" class="btn btn-danger mt-3">Contact</a>
                         </div>
                     </div>
                 </div>
@@ -199,17 +203,20 @@
         </div>
     </main>
 
-    <!-- Cards && icon -->
-    <div class="row g-0 justify-content-center align-items-start py-5">
+    <!-- Cards section -->
+    <div class="row g-0 justify-content-center align-items-start py-5" id="projects">
         <div class="col-auto">
             <div class="card text-center" style="width: 18rem;">
                 <div class="pt-5">
-                    <i class="fa-solid fa-thumbs-up fs-1 text-danger"></i>
+                    <i class="fa-solid fa-laptop-code fs-1 text-danger"></i>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text.</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+                    <h5 class="card-title">Personal Portfolio</h5>
+                    <p class="card-text">A responsive personal portfolio with modern design and smooth animations.</p>
+                    <p>Built using HTML5, CSS3, Bootstrap, and JS.
+                    Built using HTML5, CSS3, Bootstrap, and JS.
+                    </p>
+                    
                 </div>
             </div>
         </div>
@@ -219,171 +226,213 @@
                     <i class="fa-solid fa-rocket fs-1 text-danger"></i>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text.</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+                    <h5 class="card-title">E-Commerce Site</h5>
+                    <p class="card-text">A small online shop project demonstrating dynamic product listing and cart.</p>
+                    <p>Responsive layout, interactive features, and Bootstrap components.</p>
                 </div>
             </div>
         </div>
         <div class="col-auto">
             <div class="card text-center" style="width: 18rem;">
                 <div class="pt-5">
-                    <i class="fa-brands fa-rocketchat fs-1 text-danger"></i>
+                    <i class="fa-brands fa-react fs-1 text-danger"></i>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text.</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit...</p>
+                    <h5 class="card-title">React JS Project</h5>
+                    <p class="card-text">A simple React JS web app demonstrating component-based architecture.</p>
+                    <p>Includes routing, state management, and reusable components.</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- F cards -->
-    <div id="fetur" class="py-5">
+    <!-- Feature cards -->
+    <div id="features" class="py-5">
         <div class="container">
             <div class="row justify-content-center g-4">
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="card h-100">
-                        <div class="card-header fs-5">Featured</div>
+                        <div class="card-header fs-5">Responsive Design</div>
                         <div class="card-body text-start">
-                            <h5 class="card-title">Special title 1</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
-                            </p>
-                            <a href="#" class="btn btn-danger">Go somewhere</a>
+                            <h5 class="card-title">Mobile Friendly</h5>
+                            <p class="card-text">All projects are fully responsive and work on any device or screen
+                                size.</p>
+                            <a href="#projects" class="btn btn-danger">View Project</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="card h-100">
-                        <div class="card-header fs-5">Featured</div>
+                        <div class="card-header fs-5">Interactive Features</div>
                         <div class="card-body text-start">
-                            <h5 class="card-title">Special title 1</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
-                            </p>
-                            <a href="#" class="btn btn-danger">Go somewhere</a>
+                            <h5 class="card-title">Smooth Animations</h5>
+                            <p class="card-text">Hover effects, carousel sliders, and card animations are included for
+                                better UX.</p>
+                            <a href="#projects" class="btn btn-danger">See Examples</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="card h-100">
-                        <div class="card-header fs-5">Featured</div>
+                        <div class="card-header fs-5">Clean Code</div>
                         <div class="card-body text-start">
-                            <h5 class="card-title">Special title 1</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
-                            </p>
-                            <a href="#" class="btn btn-danger">Go somewhere</a>
+                            <h5 class="card-title">Well Structured</h5>
+                            <p class="card-text">All projects follow best practices in HTML, CSS, and JavaScript code
+                                structure.</p>
+                            <a href="#projects" class="btn btn-danger">Explore Code</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="card h-100">
-                        <div class="card-header fs-5">Featured</div>
+                        <div class="card-header fs-5">Responsive Design</div>
                         <div class="card-body text-start">
-                            <h5 class="card-title">Special title 1</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
-                            </p>
-                            <a href="#" class="btn btn-danger">Go somewhere</a>
+                            <h5 class="card-title">Mobile Friendly</h5>
+                            <p class="card-text">All projects are fully responsive and work on any device or screen
+                                size.</p>
+                            <a href="#projects" class="btn btn-danger">View Project</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="card h-100">
-                        <div class="card-header">Featured</div>
+                        <div class="card-header fs-5">Interactive Features</div>
                         <div class="card-body text-start">
-                            <h5 class="card-title">Special title 2</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
-                            </p>
-                            <a href="#" class="btn btn-danger">Go somewhere</a>
+                            <h5 class="card-title">Smooth Animations</h5>
+                            <p class="card-text">Hover effects, carousel sliders, and card animations are included for
+                                better UX.</p>
+                            <a href="#projects" class="btn btn-danger">See Examples</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4">
                     <div class="card h-100">
-                        <div class="card-header">Featured</div>
+                        <div class="card-header fs-5">Clean Code</div>
                         <div class="card-body text-start">
-                            <h5 class="card-title">Special title 3</h5>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
-                            </p>
-                            <a href="#" class="btn btn-danger">Go somewhere</a>
+                            <h5 class="card-title">Well Structured</h5>
+                            <p class="card-text">All projects follow best practices in HTML, CSS, and JavaScript code
+                                structure.</p>
+                            <a href="#projects" class="btn btn-danger">Explore Code</a>
                         </div>
                     </div>
                 </div>
-                
             </div>
         </div>
     </div>
 
+    <!-- contact -->
     
-    <div class="row g-3 justify-content-center align-items-center py-5">
-       
-        <div class="col-auto"><img src="./js.png" alt="" style="width: 14rem;"></div>
-        <div class="col-auto"><img src="./js.png" alt="" style="width: 14rem;"></div>
-        <div class="col-auto"><img src="./js.png" alt="" style="width: 14rem;"></div>
-        <div class="col-auto"><img src="./js.png" alt="" style="width: 14rem;"></div>
-        <div class="col-auto"><img src="./js.png" alt="" style="width: 14rem;"></div>
+    <div id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 text-danger">Contact Us</h2>
+            <div class="row justify-content-center g-4">
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card h-100 text-center">
+                        <div class="pt-5">
+                            <i class="fas fa-map-marker-alt fs-1 text-danger"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Our Location</h5>
+                            <p class="card-text">ITI, Assiut, Egypt</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card h-100 text-center">
+                        <div class="pt-5">
+                            <i class="fas fa-envelope fs-1 text-danger"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Email Us</h5>
+                            <p class="card-text">info@iti-egypt.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card h-100 text-center">
+                        <div class="pt-5">
+                            <i class="fas fa-phone fs-1 text-danger"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Call Us</h5>
+                            <p class="card-text">+20 1288938773</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Optional contact form -->
+            <div class="row justify-content-center mt-5">
+                <div class="col-12 col-md-8">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-danger">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 
-
-
-    <!-- foooooootr -->
+    <!-- Footer -->
     <footer class="bg-dark text-white pt-5 pb-4">
         <div class="container text-md-left">
             <div class="row text-md-left">
-    
                 <!-- About -->
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-danger">Company x</h5>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quidem.
-                    </p>
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-danger">ITI Web Projects</h5>
+                    <p>Projects developed by ITI students showcasing real-world web development skills.</p>
                 </div>
-    
+
                 <!-- Links -->
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-danger">Products</h5>
-                    <p><a href="#" class="text-white text-decoration-none">Product 1</a></p>
-                    <p><a href="#" class="text-white text-decoration-none">Product 2</a></p>
-                    <p><a href="#" class="text-white text-decoration-none">Product 3</a></p>
-                    <p><a href="#" class="text-white text-decoration-none">Product 4</a></p>
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-danger">Projects</h5>
+                    <p><a href="#projects" class="text-white text-decoration-none">Portfolio</a></p>
+                    <p><a href="#projects" class="text-white text-decoration-none">E-Commerce</a></p>
+                    <p><a href="#projects" class="text-white text-decoration-none">React App</a></p>
                 </div>
-    
+
                 <!-- Useful links -->
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-danger">Useful Links</h5>
-                    <p><a href="#" class="text-white text-decoration-none">Your Account</a></p>
-                    <p><a href="#" class="text-white text-decoration-none">Become an Affiliate</a></p>
-                    <p><a href="#" class="text-white text-decoration-none">Shipping Rates</a></p>
-                    <p><a href="#" class="text-white text-decoration-none">Help</a></p>
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-danger">Resources</h5>
+                    <p><a href="#skills" class="text-white text-decoration-none">Skills</a></p>
+                    <p><a href="#features" class="text-white text-decoration-none">Features</a></p>
+                    <p><a href="#contact" class="text-white text-decoration-none">Contact</a></p>
                 </div>
-    
+
                 <!-- Contact -->
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                     <h5 class="text-uppercase mb-4 font-weight-bold text-danger">Contact</h5>
-                    <p><i class="fas fa-home mr-3  text-ganger"></i> 123 Main St, City, Country</p>
-                    <p><i class="fas fa-envelope mr-3   text-ganger"></i> info@example.com</p>
-                    <p><i class="fas fa-phone mr-3   text-ganger"></i> +1288938773</p>
-                    <p><i class="fas fa-print mr-3   text-ganger"></i> -088269963</p>
+                    <p><i class="fas fa-home mr-3 text-ganger"></i> ITI, Assiut, Egypt</p>
+                    <p><i class="fas fa-envelope mr-3 text-ganger"></i> info@iti-egypt.com</p>
+                    <p><i class="fas fa-phone mr-3 text-ganger"></i> +20 1288938773</p>
                 </div>
-    
             </div>
-    
+
             <hr class="mb-4" style="border-color: rgba(255,255,255,0.2);">
-    
+
             <div class="row align-items-center">
                 <div class="col-md-7 col-lg-8">
                     <p>© 2026 All Rights Reserved by:
-                        <a href="#" class="text-danger text-decoration-none"><strong>Company Name</strong></a>
+                        <a href="#" class="text-danger text-decoration-none"><strong>ITI</strong></a>
                     </p>
                 </div>
-    
+
                 <div class="col-md-5 col-lg-4">
                     <div class="text-center text-md-right">
-                        <a href="#" class="text-danger me-4 text-danger"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-danger me-4"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="text-danger me-4"><i class="fab fa-twitter"></i></a>
                         <a href="#" class="text-danger me-4"><i class="fab fa-google"></i></a>
                         <a href="#" class="text-danger me-4"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-danger me-4"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/abanoub-maqqar-4b7980236/" class="text-danger me-4"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>
